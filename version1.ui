@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1007</width>
+    <width>1001</width>
     <height>749</height>
    </rect>
   </property>
@@ -17,55 +17,6 @@
    <layout class="QGridLayout" name="gridLayout_2">
     <item row="0" column="0">
      <layout class="QGridLayout" name="gridLayout">
-      <item row="1" column="0">
-       <widget class="QSplitter" name="splitter_2">
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-        <widget class="QWidget" name="layoutWidget">
-         <layout class="QVBoxLayout" name="verticalLayout">
-          <item>
-           <widget class="QLabel" name="label">
-            <property name="text">
-             <string>Python Interpreter</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QScrollArea" name="scrollArea_2">
-            <property name="widgetResizable">
-             <bool>true</bool>
-            </property>
-            <widget class="QWidget" name="scrollAreaWidgetContents_2">
-             <property name="geometry">
-              <rect>
-               <x>0</x>
-               <y>0</y>
-               <width>328</width>
-               <height>76</height>
-              </rect>
-             </property>
-            </widget>
-           </widget>
-          </item>
-         </layout>
-        </widget>
-        <widget class="QWidget" name="layoutWidget">
-         <layout class="QVBoxLayout" name="verticalLayout_2">
-          <item>
-           <widget class="QLabel" name="label_2">
-            <property name="text">
-             <string>Visual Aid</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QTextBrowser" name="textBrowser_2"/>
-          </item>
-         </layout>
-        </widget>
-       </widget>
-      </item>
       <item row="0" column="0">
        <widget class="QSplitter" name="splitter">
         <property name="orientation">
@@ -131,7 +82,7 @@
           </item>
          </item>
         </widget>
-        <widget class="QWidget" name="layoutWidget">
+        <widget class="QWidget" name="">
          <layout class="QVBoxLayout" name="verticalLayout_4">
           <item>
            <widget class="QLabel" name="label_3">
@@ -148,7 +99,7 @@
            </widget>
           </item>
           <item>
-           <widget class="QPlainTextEdit" name="plainTextEdit"/>
+           <widget class="QTreeView" name="treeView"/>
           </item>
          </layout>
         </widget>
@@ -199,6 +150,55 @@
         </widget>
        </widget>
       </item>
+      <item row="1" column="0">
+       <widget class="QSplitter" name="splitter_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <widget class="QWidget" name="layoutWidget">
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="text">
+             <string>Python Interpreter</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QScrollArea" name="scrollArea_2">
+            <property name="widgetResizable">
+             <bool>true</bool>
+            </property>
+            <widget class="QWidget" name="scrollAreaWidgetContents_2">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>294</width>
+               <height>198</height>
+              </rect>
+             </property>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="layoutWidget">
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item>
+           <widget class="QLabel" name="label_2">
+            <property name="text">
+             <string>Visual Aid</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QTextBrowser" name="textBrowser_2"/>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
      </layout>
     </item>
    </layout>
@@ -208,8 +208,8 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1007</width>
-     <height>25</height>
+     <width>1001</width>
+     <height>19</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuFile">
@@ -431,22 +431,5 @@
   </action>
  </widget>
  <resources/>
- <connections>
-  <connection>
-   <sender>treeWidget</sender>
-   <signal>itemPressed(QTreeWidgetItem*,int)</signal>
-   <receiver>pushButton</receiver>
-   <slot>click()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>99</x>
-     <y>112</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>261</x>
-     <y>139</y>
-    </hint>
-   </hints>
-  </connection>
- </connections>
+ <connections/>
 </ui>
